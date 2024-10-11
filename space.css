@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+
+:root {
+    --font: sans-serif;
+    --memberscolor: #FFE1FF;
+    --hover-color:#41B3A2;
+    --card-font-color:#FFE9D0;
+}
+
+.background {
+    position: absolute;
+    z-index: -10;
+    width: 100vw;
+    height: 300vh;
+    filter: brightness(18%);
+
+}
+
+.navbar {
+    max-width: 90vw;
+    height: 10vh;
+    display: flex;
+    margin: auto;
+    gap: 25vw;
+    padding-top: 2vh;
+    justify-content: space-around;
+    margin-bottom: 8vh;
+}
+
+.navbar ul li {
+    list-style: none;
+    font-family: var(--font);
+    color: var(--memberscolor);
+
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+
+}
+
+.members a{
+    text-decoration: none;
+    color: var(--memberscolor);;
+}
+
+.navbar ul li:hover{
+    color: var(--hover-color);
+}
+.navbar ul li a:hover{
+    color:var(--hover-color);;
+}
+
+.content{
+    width: 90vw;
+    height: 100vh;
+    /* background-color: black; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2vw;
+    
+}
+
+/* Form here the css is for cards */
+.card{
+    border-radius: 5px;
+    padding: 2vh 1vw 2vh 1vw;
+    margin: auto;
+    width: 25vw;
+    height: 70vh;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.image{
+    width: 90%vw;
+    height: 30vh;
+    margin: auto;
+    /* background-color: black; */
+    border-radius: 5px;
+    margin-bottom: 3vh;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .heading{
+    width:100%;
+    height: 12%;
+    /* background-color: aqua; */
+    margin-bottom:2vh; 
+}
+.card .heading h3{
+    font-size: xx-large;
+    font-family: var(--font);
+    color: var(--card-font-color);
+}
+
+.card .mini_notes{
+    width:100%;
+    height: 25%;
+    /* background-color: aqua; */
+    margin-bottom:2vh; 
+}
+
+.card .mini_notes p{
+    font-size: larger;
+    font-family: var(--font);
+    color: var(--card-font-color);
+}
+
+.button
+{
+    width: 80%;
+    height: 10%;
+    margin: auto;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button button{
+    padding: 1.5% 2% 1.5% 2%;
+    font-weight: 500;
+    font-size: larger;
+    border-radius: 5px;
+    font-family: var(--font);
+    color: var(--card-font-color);
+    border: none;
+    background-color: rgb(50, 37, 37);
+}

@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+:root {
+    --font: sans-serif;
+    --memberscolor: white;
+    --hover-color: #E4B1F0;
+}
+
+.background {
+    position: absolute;
+    z-index: -10;
+    width: 100vw;
+    height: 100vh;
+    /* filter: blur(2px); */
+}
+
+.navbar {
+    max-width: 90vw;
+    height: 10vh;
+    display: flex;
+    margin: auto;
+    gap: 25vw;
+    padding-top: 2vh;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    list-style: none;
+    font-family: var(--font);
+    color: var(--memberscolor);
+
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+
+}
+
+.members .Login {
+    color: aqua;
+}
+
+
+.members a{
+    text-decoration: none;
+    color: var(--memberscolor);;
+}
+.content {
+    max-width: 90vw;
+    height: 60vh;
+    margin: auto;
+    margin-top: 12vh;
+    display: flex;
+    align-items:center ;
+    gap: 29vw;
+}
+
+.content .article {
+    width: 40vw;
+    height: 45vh;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    gap: 2vh;
+    padding-top: 13vh;
+}
+
+.article span{
+    font-size: 125px;
+    color: white;
+    opacity: 0.7;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+.content .mindful {
+    width: 30vw;
+    height: 45vh;
+}
+
+.mindful{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.mindful span{
+    font-family: var(--font);
+    font-size :70px;
+    color: white;
+}
+
+span .yellow{
+    color: yellow;
+}
+
+.navbar ul li:hover{
+    color: var(--hover-color);
+}
+.navbar ul li a:hover{
+    color:var(--hover-color);;
+}
+/* .footer {
+    margin-top: 13vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul{
+    display: flex;
+    
+}
+
+.footer ul li{
+    list-style: none;
+    width: 100vw;
+    height: 20vh;
+    background-color: rgba(73, 0, 73, 0.626);
+
+} */
+
