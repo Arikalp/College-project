@@ -8,6 +8,7 @@
     --font: sans-serif;
     --memberscolor: white;
     --hover-color: #E4B1F0;
+    --login:aqua;
 }
 
 .background {
@@ -15,7 +16,11 @@
     z-index: -10;
     width: 100vw;
     height: 100vh;
-    /* filter: blur(2px); */
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    
+    filter: blur(1.5px);
 }
 
 .navbar {
@@ -43,7 +48,64 @@
 
 }
 
-.members .Login {
+/* Dropdown menu */
+.dropdown {
+    position: absolute;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: -20;
+    margin-top: 10px;
+}
+
+.dropdown-content li {
+    list-style: none;
+}
+
+.dropdown-content li a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+    font-family: var(--font);
+}
+
+.dropdown-content li a:hover {
+    background-color: var(--hover-color);
+    color: #fff;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 1;
+}
+
+
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li:hover > a {
+    color: var(--hover-color);
+}
+
+@media (max-width: 768px) {
+    
+    .background{
+        object-fit: cover;
+    }
+   
+}
+
+
+.Login {
     color: aqua;
 }
 
@@ -60,6 +122,15 @@
     display: flex;
     align-items:center ;
     gap: 29vw;
+}
+
+@media(max-width:1024px){
+    .content{
+        gap:39vw
+    }
+    .background{
+        object-fit: cover;
+    }
 }
 
 .content .article {
@@ -83,6 +154,30 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 
+@media (max-width:768px)
+{
+    .content .article {
+        width: 25vw;
+        height: 30vh;
+    }
+    
+    .article{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        justify-content: center;
+        gap: 1vh;
+        /* padding-top: 11vh; */
+    }
+    
+    .article span{
+        font-size: 75px;
+        color: white;
+        opacity: 0.8;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    }
+}
+
 .content .mindful {
     width: 30vw;
     height: 45vh;
@@ -100,18 +195,39 @@
     font-family: var(--font);
     font-size :70px;
     color: white;
+    opacity: 70%;
+    font-weight: 600;
+}
+
+@media(max-width:768px){
+    .content .mindful {
+        width: 20vw;
+        height: 255vh;
+    }
+    
+    .mindful{
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        justify-content: center;
+        gap: 1vh;
+    }
+    
+    .mindful span{
+        font-family: var(--font);
+        font-size :40px;
+        color: white;
+    }
 }
 
 span .yellow{
     color: yellow;
 }
+.Login:hover{
+    color:var(--login);
+}
 
-.navbar ul li:hover{
-    color: var(--hover-color);
-}
-.navbar ul li a:hover{
-    color:var(--hover-color);;
-}
+
 /* .footer {
     margin-top: 13vh;
     justify-content: center;
