@@ -1,4 +1,4 @@
-const apikey = 'c5063f1dc86946e1b3aa336a7512bead';
+const apikey = '0cfd8c895451406a84379ea1f60a77f8';
 const container = document.querySelector('.content');
 const searchInput = document.querySelector('.search'); // Select search input
 
@@ -53,8 +53,7 @@ function displayBlogs(articles) {
         button.textContent = "Read more";
 
         button.addEventListener("click", () => {
-            description.textContent = article.description || "No additional content available";
-            button.style.display = "none"; // Hide "Read more" after expansion
+            window.open(article.url,"_blank");
         });
 
         buttonDiv.appendChild(button);

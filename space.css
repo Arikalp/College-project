@@ -112,7 +112,7 @@
     .navbar {
         max-width: 99vw;
         height: 15vh;
-        gap: 15vw;
+        gap: 10vw;
         padding-top: 2vh;
         margin-bottom: 5vh;
     }
@@ -190,4 +190,10 @@
     color: var(--card-font-color);
     border: none;
     background-color: rgb(50, 37, 37);
+}
+
+button:hover{
+    background-color:rgb(103, 91, 91); 
+    color: black;
+    transform: scale(1.1);
 }
