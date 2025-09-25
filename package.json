@@ -1,0 +1,14 @@
+{
+  "name": "glancer",
+  "version": "1.0.0",
+  "description": "Articles and blogs platform",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": ["articles", "blogs", "education"],
+  "author": "Sankalp Saini",
+  "license": "MIT"
+}

@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #2e1a47; /* Dark purple background */
+    color: #d1c4e9; /* Light purple text */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #4a235a; /* Darker purple */
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #6a1b9a 3px solid; /* Accent purple */
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.about {
+    padding: 30px 0;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff; /* White text */
+}
+
+.about p {
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #e1bee7; /* Lighter purple */
+}
+
+.team-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.team-list li {
+    background: #6a1b9a; /* Accent purple */
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 250px;
+}
+
+footer {
+    background: #4a235a; /* Darker purple */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
