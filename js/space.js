@@ -1,19 +1,18 @@
-const apikey = '0cfd8c895451406a84379ea1f60a77f8';
 const container = document.querySelector('.content');
-const searchInput = document.querySelector('.search'); // Select search input
+const searchInput = document.querySelector('.search');
 
 async function fetchNews(query = '') {
     try {
         const apiUrl = query
-            ? `https://newsapi.org/v2/everything?q=${query}&pageSize=9&apiKey=${apikey}`
-            : `https://newsapi.org/v2/top-headlines?country=us&pageSize=9&apiKey=${apikey}`; // Default to top headlines
+            ? `/api/news?query=${encodeURIComponent(query)}&pageSize=9`
+            : `/api/news?country=us&pageSize=9`;
 
         const response = await fetch(apiUrl);
 
         if (!response.ok) throw new Error(`Network response was not ok: ${response.statusText}`);
 
         const data = await response.json();
-        return data.articles;
+        return data.articles || [];
     } catch (error) {
         console.error("Error fetching news:", error);
         return [];

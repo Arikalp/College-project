@@ -3,7 +3,7 @@ const config = {
     // API endpoints (using Vercel serverless functions)
     endpoints: {
         example: '/api/example',
-        // Add more endpoints as needed
+        news: '/api/news'
     },
     
     // App settings
